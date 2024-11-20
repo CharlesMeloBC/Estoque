@@ -1,0 +1,75 @@
+﻿# Compilação
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Logs
+*.log
+*.tlog
+
+# Sistema de arquivos do Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Usuário/IDE
+*.user
+*.suo
+*.tmp
+*.userosscache
+*.sln.docstates
+
+# Diretórios do Visual Studio
+.vscode/
+.vs/
+.idea/
+
+# Cache e pacotes
+*.cache
+*.config
+*.ide-helper
+*.ide-helper.php
+.env
+/.vs/
+/_ReSharper*/
+
+# Testes e resultados de build
+TestResults/
+*.testresults
+
+# Arquivos gerados pelo NuGet
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Arquivos do Rider/JetBrains
+.idea/
+*.sln.iml
+
+# Arquivos de Publish
+.publish/
+
+# Configuração do container de desenvolvimento
+.localdevcontainer/
+
+# Dotnet-specific
+*.db
+*.mdb
+*.pidb
+project.lock.json
+artifacts/
+*.db-journal
+
+# Logs de execução
+*.runtimeconfig.json
+
+# Arquivos temporários de configuração
+*.vspscc
+*.vssscc
+
+# Diretórios específicos do Rider
+.idea/
+*.sln.iml
