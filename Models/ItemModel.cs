@@ -1,12 +1,12 @@
 ﻿namespace Estoque.Models
 {
-    class Item
+    public class ItemModel
     {
         public int Id { get; private set; }
         public string Name { get; private set; } = null!;
 
 
-        public Item(string name)
+        public ItemModel(string name)
         {
             string Name = name;
         }
