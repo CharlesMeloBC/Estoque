@@ -34,8 +34,8 @@ Explique cada funcionalidade implementada.
 ```markdown
 ## Funcionalidades
 
-### 1. Transposição de Banco de Dados
-- Transforma dados de arquivos XML em um banco de dados relacional.
+### 1. Criando de Banco de Dados
+- Criar banco de dados relacional.
 - Suporta validação e logs durante o processo.
 
 ### 2. Logs
