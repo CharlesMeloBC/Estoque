@@ -7,8 +7,8 @@
 
         public ItemDTO(int id, string name)
         {
-            Id = id;
-            Name = name;
+             Id = id;
+             Name = name;
         }
         
     }

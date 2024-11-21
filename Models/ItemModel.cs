@@ -5,22 +5,22 @@
         public int Id { get; private set; }
         public string Name { get; private set; } = null!;
 
-
         public ItemModel(string name)
         {
-            string Name = name;
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentException("Nome não pode ser vazio.", nameof(name));
+
+            Name = name; 
         }
 
-        public string GetName () { return Name; }
+        public string GetName() => Name;
 
-        public void UpdateName (string newName) 
+        public void UpdateName(string newName)
         {
             if (string.IsNullOrWhiteSpace(newName))
-            throw new ArgumentNullException("precisa preencher os campos");
+                throw new ArgumentNullException(nameof(newName), "Nome não pode ser vazio.");
+
             Name = newName;
         }
-    
     }
-
-       
 }
