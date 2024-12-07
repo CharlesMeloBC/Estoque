@@ -5,6 +5,13 @@
         public int Id { get; private set; }
         public string Name { get; private set; } = null!;
 
+        public bool IsDeleted { get; private set; } 
+
+        public void Disable () 
+        { 
+            IsDeleted = true;
+        }  
+
         public ItemModel(string name)
         {
             if (string.IsNullOrWhiteSpace(name))

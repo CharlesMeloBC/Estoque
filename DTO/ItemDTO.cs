@@ -10,6 +10,7 @@
              Id = id;
              Name = name;
         }
-        
+        public bool IsDeleted { get; private set; } = false;
+
     }
 }

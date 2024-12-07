@@ -6,5 +6,6 @@ namespace Estoque.Services
     {
         IEnumerable<ItemDTO> GetAll();
         ItemDTO Create(ItemDTO itemDTO);
+        Task<bool> Delete(int id);
     }
 }

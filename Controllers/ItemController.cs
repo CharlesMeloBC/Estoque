@@ -28,5 +28,15 @@ namespace Estoque.Controllers
             var item = _itemService.Create(itemDTO);
             return CreatedAtAction(nameof(GetAllItems), new {id = item.Name}, item);
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteItem(int id) 
+        {
+            var success = await _itemService.Delete(id);
+            if (!success)
+            return NotFound();
+            
+            return NoContent();  
+        }
     }
 }

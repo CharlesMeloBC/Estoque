@@ -30,5 +30,17 @@ namespace Estoque.Services
 
             return new ItemDTO(item.Id, item.Name);
         }
+
+        public async Task<bool> Delete (int id)
+        {
+            var item = await _context.Item.FindAsync(id);
+            if (item == null)
+                return false;
+
+            item.Disable();
+            await _context.SaveChangesAsync();
+            return true;
+
+        }
     }
 }
